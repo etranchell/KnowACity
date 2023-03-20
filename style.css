@@ -1,0 +1,38 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --button: maroon;
+    --darkBlue: rgb(35, 35, 60);
+}
+
+header {
+    background-color: var(--darkBlue);
+    color: white;
+    text-align: center;
+    padding: 1px;
+}
+
+.btn {
+    font-size: 20px;
+    background-color: var(--button);
+    padding: 2px;
+    width: 20%;
+    display: block;
+    margin: 4px 0;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn:hover {
+    background-color: var(--darkBlue);
+    color: white;
+}
+
+#cityname {
+    width: 20%;
+    padding: 5px;
+    font-size: larger;
+}
