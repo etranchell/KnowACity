@@ -21,16 +21,15 @@ main {
 header {
     background-color: var(--background);
     color: var(--font);
-    font-size: larger;
+    font-size: large;
     text-align: center;
-    padding: 12px;
+    padding: 8px;
     width: 100%;
 }
 
 .card {
     border: 3px solid var(--background);
-    width: 30%;
-    height: 200px;
+    width: 25%;
     margin-top: 25px;
     margin-left: 10px;
 }
@@ -39,21 +38,19 @@ h2 {
     text-align: center;
     color: var(--background);
     text-transform: uppercase;
-    margin-bottom: 5px;
-    margin-top: 25px;
-    font-size: x-large;
+    margin-bottom: 20px;
 }
 
 .btn {
     font-size: 20px;
     background-color: var(--button);
-    padding: 6px;
+    padding: 4px;
     width: 85%;
     display: block;
     margin: 4px 0 20px 0;
     border-radius: 5px;
     color: white;
-    transform: translate(9%, 65%);
+    transform: translate(9%);
 }
 
 .btn:hover {
@@ -63,8 +60,8 @@ h2 {
 
 #cityname {
     width: 85%;
-    padding: 7px;
+    padding: 5px;
     font-size: larger;
     margin-bottom: 2px;
-    transform: translate(9%, 50%);
+    transform: translate(9%);
 }
