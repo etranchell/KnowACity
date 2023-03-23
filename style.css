@@ -4,35 +4,67 @@
 }
 
 :root {
-    --button: maroon;
-    --darkBlue: rgb(35, 35, 60);
+    --button: rgb(204, 68, 14);
+    --buttonHover: rgb(152, 57, 19);
+    --background: rgb(62, 83, 146);
+    --font: rgb(235, 230, 230);
+}
+
+body { 
+    margin: 0;
+}
+
+main {
+    padding-left: 20px;
 }
 
 header {
-    background-color: var(--darkBlue);
-    color: white;
+    background-color: var(--background);
+    color: var(--font);
+    font-size: larger;
     text-align: center;
-    padding: 1px;
+    padding: 12px;
+    width: 100%;
+}
+
+.card {
+    border: 3px solid var(--background);
+    width: 30%;
+    height: 200px;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: var(--background);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 25px;
+    font-size: x-large;
 }
 
 .btn {
     font-size: 20px;
     background-color: var(--button);
-    padding: 2px;
-    width: 20%;
+    padding: 6px;
+    width: 85%;
     display: block;
-    margin: 4px 0;
+    margin: 4px 0 20px 0;
     border-radius: 5px;
     color: white;
+    transform: translate(9%, 65%);
 }
 
 .btn:hover {
-    background-color: var(--darkBlue);
+    background-color: var(--buttonHover);
     color: white;
 }
 
 #cityname {
-    width: 20%;
-    padding: 5px;
+    width: 85%;
+    padding: 7px;
     font-size: larger;
+    margin-bottom: 2px;
+    transform: translate(9%, 50%);
 }
