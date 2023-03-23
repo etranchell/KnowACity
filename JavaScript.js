@@ -7,6 +7,8 @@ const options = {
 	}
 };
 
+
+
 fetch('https://weatherapi-com.p.rapidapi.com/current.json?q=East%20Lansing', options)
 .then((response) =>{return response.json();})//returns response object as a JS object
 .then((completedData)=>{console.log(completedData);
@@ -22,3 +24,4 @@ fetch('https://weatherapi-com.p.rapidapi.com/current.json?q=East%20Lansing', opt
 
 //current
 //location
+

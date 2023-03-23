@@ -8,6 +8,7 @@
 <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 <link rel="stylesheet" href="./style.css" />
+
 <title>Know a City</title>
 </head>
 
@@ -19,15 +20,26 @@
     <main class="flex-row justify-space-between">
         <div class="card">
             <h2>Search for a City:</h2>
-            <form id="user-form">
+            <form id="userForm">
               <label for="cityname"></label>
               <input name="cityname" id="cityname" type="text" class="form-input" placeholder="City Name"/>
               <button type="submit" class="btn">Search</button>
             </form>
         </div>
 
+        <div id="map"></div>
+    
+        <div id="weather"></div>
+
 
     </main>
+
+
+     <script src="./JavaScript.js"></script>
+     <script src="./JavaScript2.js"></script>
+     
+     
+
 
     <div id= "weather-results">
         <ul>
@@ -42,6 +54,8 @@
             <li id="city"></li>
         </ul>
     </div>
+<script src="./JavaScript.js"></script>
+<script src="./JavaScript2.js"></script>
     </body>
-    <script src="./JavaScript.js"></script>
+    
 </html>
