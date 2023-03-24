@@ -45,11 +45,21 @@ document.head.appendChild(script);
 navigator.geolocation.getCurrentPosition(position => {
   const latitude = position.coords.latitude;
   const longitude = position.coords.longitude;
-  fetch(`${corsUrl}${latitude},${longitude}&radius=500&type=cafe&keyword=business&key=${googleMapsApiKey}`)
+  fetch(`${corsUrl}${latitude},${longitude}&radius=500&type=restaurant&keyword=business&key=${googleMapsApiKey}`)
     .then(response => response.json())
     .then(data => {
+
+    
       console.log(data);
+
+  //for (let i = 0; i < data.length; i++) {           Switch i back to 0 for results
+  
       var business = document.getElementById("Business");
       business.innerHTML = data.results[0].name;
-    });
+      var rating = document.getElementById('rating');
+      rating.innerHTML = data.results[0].rating;
+      var vicinity = document.getElementById('vicinity');
+      vicinity.innerHTML = data.results[0].vicinity;
+    //}
+});
 });
