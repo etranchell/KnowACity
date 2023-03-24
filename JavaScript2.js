@@ -49,5 +49,7 @@ navigator.geolocation.getCurrentPosition(position => {
     .then(response => response.json())
     .then(data => {
       console.log(data);
+      var business = document.getElementById("Business");
+      business.innerHTML = data.results[0].name;
     });
 });
