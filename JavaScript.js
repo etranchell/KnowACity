@@ -22,6 +22,6 @@ fetch('https://weatherapi-com.p.rapidapi.com/current.json?q=East%20Lansing', opt
 	city.innerHTML = completedData.location.name;})
 	  .catch(err => console.error(err));//catches errors
 
+
 //current
 //location
-
