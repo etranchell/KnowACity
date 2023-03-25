@@ -6,17 +6,10 @@ const options = {
 		'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
 	}
 };
- const form = document.getElementById('userForm');
- const city = document.getElementById('cityname');
-
- form.addEventListener('submit', function(event) {
-	event.preventDefault();
-
-	const cityValue = city.value;
-	console.log(cityValue);
 
 
-fetch(`https://weatherapi-com.p.rapidapi.com/current.json?q=${cityValue}`, options)  
+
+fetch('https://weatherapi-com.p.rapidapi.com/current.json?q=East%20Lansing', options)
 .then((response) =>{return response.json();})//returns response object as a JS object
 .then((completedData)=>{console.log(completedData);
 	var clouds = document.getElementById("cloudy");//sets clouds to innerHTML on the div
@@ -24,11 +17,11 @@ fetch(`https://weatherapi-com.p.rapidapi.com/current.json?q=${cityValue}`, optio
 	var feelsLike = document.getElementById("feelsLike");
 	var city = document.getElementById("city");
 	clouds.innerHTML = completedData.current.condition.text;
-	temp.innerHTML = completedData.current.temp_f
-	feelsLike.innerHTML = completedData.current.feelslike_f;
+	temp.innerHTML = "Temp: "+completedData.current.temp_f+"℉";
+	feelsLike.innerHTML = "Feels Like: "+completedData.current.feelslike_f+"℉";
 	city.innerHTML = completedData.location.name;})
 	  .catch(err => console.error(err));//catches errors
- });
+
 
 //current
 //location
