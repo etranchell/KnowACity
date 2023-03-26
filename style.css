@@ -13,6 +13,8 @@
 
 body { 
     margin: 0;
+    background-color: antiquewhite;
+
 }
 
 main {
@@ -76,4 +78,12 @@ h2 {
     font-size: larger;
     margin-bottom: 2px;
     transform: translate(9%, 50%);
+}
+
+#content{
+    text-indent: 10px
+}
+
+li{
+    list-style-type: none;
 }

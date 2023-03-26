@@ -6,7 +6,8 @@ const options = {
 		'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
 	}
 };
- const form = document.getElementById('userForm');
+
+const form = document.getElementById('userForm');
  const city = document.getElementById('cityname');
 
  form.addEventListener('submit', function(event) {
@@ -24,11 +25,10 @@ fetch(`https://weatherapi-com.p.rapidapi.com/current.json?q=${cityValue}`, optio
 	var feelsLike = document.getElementById("feelsLike");
 	var city = document.getElementById("city");
 	clouds.innerHTML = completedData.current.condition.text;
-	temp.innerHTML = completedData.current.temp_f
-	feelsLike.innerHTML = completedData.current.feelslike_f;
+	temp.innerHTML = "Temp: "+completedData.current.temp_f+"℉";
+	feelsLike.innerHTML = "Feels Like: "+completedData.current.feelslike_f+"℉";
 	city.innerHTML = completedData.location.name;})
 	  .catch(err => console.error(err));//catches errors
- });
-
+	});
 //current
 //location
