@@ -13,6 +13,8 @@
 
 body { 
     margin: 0;
+    background-color: antiquewhite;
+
 }
 
 main {
@@ -43,6 +45,12 @@ h2 {
     margin-bottom: 5px;
     margin-top: 25px;
     font-size: x-large;
+}
+
+h3 {
+    font-size: larger;
+    color: var(--background);
+    margin-left: 163px;
 }
 
 .btn {
@@ -76,4 +84,24 @@ h2 {
     font-size: larger;
     margin-bottom: 2px;
     transform: translate(9%, 50%);
+}
+
+#content{
+    text-indent: 10px
+}
+
+li{
+    list-style-type: none;
+}
+
+#city {
+    font-weight: bolder;
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 35px;
 }
