@@ -51,71 +51,15 @@ navigator.geolocation.getCurrentPosition(position => {
       console.log(data);
 
   var business1 = document.getElementById('Business1');
-  var rating1 = document.getElementById('rating1');
-  var address = document.getElementById('vicinity1');
-  if(data.results[0] === undefined)
-  {
-    console.log("No businesses in this area. Pick another city to search.");
-  }
-  else{
   business1.innerHTML = data.results[0].name;
-  rating1.innerHTML = "Rating: "+ data.results[0].rating;
-  address.innerHTML = data.results[0].vicinity;
-  }
-
-  if(data.results[1] === undefined)
-  {
-    console.log("No more businesses in this area.");
-  }
-  else
-  {
   var business2 = document.getElementById('Business2');
-  var rating1 = document.getElementById('rating2');
-  var address = document.getElementById('vicinity2');
-  business2.innerHTML = data.results[1].name;
-  rating1.innerHTML = "Rating: "+data.results[1].rating;
-  address.innerHTML = data.results[1].vicinity;
-  }
-  if(data.results[2] === undefined)
-  {
-    console.log("No more businesses in this area.")
-  }
-  else
-  {
+  business2.innerHTML = data.result[1].name;
   var business3 = document.getElementById('Business3');
-  var rating1 = document.getElementById('rating3');
-  var address = document.getElementById('vicinity3');
-  business3.innerHTML = data.results[2].name;
-  rating1.innerHTML = "Rating: "+data.results[2].rating;
-  address.innerHTML = data.results[2].vicinity;
-  }
-
-  if(data.results[3] === undefined)
-  {
-    console.log("No more businesses in this area.");
-  }
-  else
-  {
+  business3.innerHTML = data.result[2].name;
   var business4 = document.getElementById('Business4');
-  var rating1 = document.getElementById('rating4');
-  var address = document.getElementById('vicinity4');
-  business4.innerHTML = data.results[3].name;
-  rating1.innerHTML = "Rating: "+data.results[3].rating;
-  address.innerHTML = data.results[3].vicinity;
-  }
-
-  if(data.results[4] === undefined)
-  {
-    console.log("No more businesses in this area.");
-  }
-  else
-  {
+  business4.innerHTML = data.result[3].name;
   var business5 = document.getElementById('Business5');
-  var rating1 = document.getElementById('rating5');
-  var address = document.getElementById('vicinity5');
-  business5.innerHTML = data.results[4].name;
-  rating1.innerHTML = "Rating: "+data.results[4].rating;
-  address.innerHTML = data.results[4].vicinity;
-  }
+  business5.innerHTML = data.result[4].name;
+
     });
 });

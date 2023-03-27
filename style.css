@@ -13,6 +13,8 @@
 
 body { 
     margin: 0;
+    background-color: antiquewhite;
+
 }
 
 main {
@@ -42,6 +44,12 @@ h2 {
     text-transform: uppercase;
     margin-bottom: 5px;
     margin-top: 25px;
+    font-size: x-large;
+}
+
+h3 {
+    margin-left: 165px;
+    color: var(--background);
     font-size: x-large;
 }
 
@@ -77,3 +85,33 @@ h2 {
     margin-bottom: 2px;
     transform: translate(9%, 50%);
 }
+
+#weather-results {
+    width: 40%;
+    padding: 2.5px;
+    font-size: large;
+}
+
+#businessSection {
+    margin-top: 15px;
+}
+
+#content{
+    text-indent: 10px;
+}
+
+li{
+    list-style-type: none;
+}
+
+#city {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+p {
+    font-size: 24px;
+    font-weight: bolder;
+    margin-left: 30px;
+}
+

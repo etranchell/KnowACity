@@ -25,10 +25,12 @@
             <form id="userForm">
               <label for="cityname"></label>
               <input name="cityname" id="cityname" type="text" class="form-input" placeholder="City Name"/>
-              <button type="submit" class="btn">Search</button>
+              <button type="submit" id="button" class="btn">Search</button>
             </form>
         </div>
 
+
+        <h3>Map of Current location</h3>
         <div id="map"></div>
 
     
@@ -40,14 +42,7 @@
 
 
 
-    <div id="weather-results">
 
-        <ul>
-            <li id="cloudy"></li>
-            <li id="temp"></li>
-            <li id="feelsLike"></li>
-        </ul>
-    </div>
 
     <div id="location-results">
         <ul>
@@ -56,11 +51,59 @@
     </div>
 
 
-    <div>
+    <div id="weather-results">
+        <p>Weather Forecast:</p>
+
         <ul>
-            <li id="Business">Business:</li>
-            <li id="rating">Rating:</li>
-            <li id="vicinity">Location:</li>
+            <li id="cloudy"></li>
+            <br>
+            <li id="temp"></li>
+            <br>
+            <li id="feelsLike"></li>
+        </ul>
+    </div>
+
+
+    <div>
+        <p>Businesses:</p>
+        <ul id="businessSection">
+            <li id="Business1"></li>
+            <div id="content">
+            <li id="rating1"></li>
+            <li id="vicinity1"></li>
+            </div>
+
+            <br>
+
+            <li id="Business2"></li>
+            <div id="content">
+            <li id="rating2"></li>
+            <li id="vicinity2"></li>
+            </div>
+
+            <br>
+
+            <li id="Business3"></li>
+            <div id="content">
+            <li id="rating3"></li>
+            <li id="vicinity3"></li>
+            </div>
+
+            <br>
+
+            <li id="Business4"></li>
+            <div id="content">
+            <li id="rating4"></li>
+            <li id="vicinity4"></li>
+            </div>
+
+            <br>
+
+            <li id="Business5"></li>
+            <div id="content">
+            <li id="rating5"></li>
+            <li id="vicinity5"></li>
+            </div>
         </ul>
     </div>
 
@@ -74,3 +117,6 @@
     
 
 </html>
+
+
+
