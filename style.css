@@ -47,6 +47,12 @@ h2 {
     font-size: x-large;
 }
 
+h3 {
+    font-size: larger;
+    color: var(--background);
+    margin-left: 163px;
+}
+
 .btn {
     font-size: 20px;
     background-color: var(--button);
@@ -87,3 +93,14 @@ h2 {
 li{
     list-style-type: none;
 }
+
+#city {
+    font-weight: bolder;
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 35px;

@@ -45,7 +45,7 @@ document.head.appendChild(script);
 navigator.geolocation.getCurrentPosition(position => {
   const latitude = position.coords.latitude;
   const longitude = position.coords.longitude;
-  fetch(`${corsUrl}${latitude},${longitude}&radius=500&type=restaurant&keyword=business&key=${googleMapsApiKey}`)
+  fetch(`${corsUrl}${latitude},${longitude}&radius=5000&type=cafe&keyword=business&key=${googleMapsApiKey}`)
     .then(response => response.json())
     .then(data => {
       console.log(data);
