@@ -24,16 +24,19 @@ During the development of this project, I learned a lot about mobile app develop
 5.) Once the server is running, you can access the project in your web browser by navigating to the appropriate URL.
 
     (This is based on getting it from GitHub. Hopefully in the future we would be able to make a a live server). 
+    
+Click to see active site.  https://etranchell.github.io/KnowACity/
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+    
+Screen shot showing home page with search city button.
+![image](https://user-images.githubusercontent.com/123092979/228099781-a6ae89d0-8c7e-485b-b88c-17c5c06a186c.png)
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+Screen shot showing weather and coffee shops results from the search city button.
+![image](https://user-images.githubusercontent.com/123092979/228099846-05ff9e5c-d913-4e0e-9d36-df24646acf37.png)
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+
 
 ## Credits
 
@@ -59,30 +62,6 @@ List your collaborators, if any, with links to their GitHub profiles.
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+N/A
 
 ---
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-1.) Search functionality: Users can search for cafes using maps and get weather information for a specific location.
-
-2.) Location-based recommendations: The app can recommend cafes based on the user's current location or a location they specify.
-
-3.) Map integration: The app can integrate with Google Maps or another mapping service to show the user the location of nearby cafes.
-
-4.) Weather integration: The app can integrate with a weather API to provide current weather conditions, as well as hourly and daily forecasts.
-
-5.) User reviews and ratings: The app can display user reviews and ratings of cafes, allowing users to make informed decisions about where to go.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
