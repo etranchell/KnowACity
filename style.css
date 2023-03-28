@@ -86,4 +86,21 @@ h2 {
 
 li{
     list-style-type: none;
+    font-family: Arial;
+}
+
+#weather-results{
+    border: 3px solid var(--background);
+    width: 30%;
+    height: 100px;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+#businessResults{
+    border: 3px solid var(--background);
+    width: 30%;
+    height: flex;
+    margin-top: 25px;
+    margin-left: 10px;
 }

@@ -25,7 +25,7 @@
             <form id="userForm">
               <label for="cityname"></label>
               <input name="cityname" id="cityname" type="text" class="form-input" placeholder="City Name"/>
-              <button type="submit" class="btn">Search</button>
+              <button type="submit" id="button" class="btn">Search</button>
             </form>
         </div>
 
@@ -39,27 +39,19 @@
     </main>
 
 
-
-
-
-
     <div id="weather-results">
 
         <ul>
-            <li id="cloudy"></li>
-            <li id="temp"></li>
-            <li id="feelsLike"></li>
-        </ul>
-    </div>
-
-    <div id="location-results">
-        <ul>
             <li id="city"></li>
+            <li id="cloudy">Weather</li>
+            <li id="temp">Temperature</li>
+            <li id="feelsLike">Feels Like</li>
         </ul>
     </div>
 
 
-    <div>
+
+    <div id="businessResults">
         <ul id="businessSection">
             <li id="Business1"></li>
             <div id="content">
@@ -103,6 +95,3 @@
     
 
 </html>
-
-
-
