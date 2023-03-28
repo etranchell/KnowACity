@@ -47,12 +47,6 @@ h2 {
     font-size: x-large;
 }
 
-h3 {
-    font-size: larger;
-    color: var(--background);
-    margin-left: 163px;
-}
-
 .btn {
     font-size: 20px;
     background-color: var(--button);
@@ -92,15 +86,21 @@ h3 {
 
 li{
     list-style-type: none;
+    font-family: Arial;
 }
 
-#city {
-    font-weight: bolder;
-    font-size: xx-large;
-    text-decoration: underline;
+#weather-results{
+    border: 3px solid var(--background);
+    width: 30%;
+    height: 100px;
+    margin-top: 25px;
+    margin-left: 10px;
 }
 
-p {
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 35px;
+#businessResults{
+    border: 3px solid var(--background);
+    width: 30%;
+    height: flex;
+    margin-top: 25px;
+    margin-left: 10px;
+}
